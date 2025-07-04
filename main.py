@@ -9,7 +9,7 @@ dp = Dispatcher()
 
 @dp.message(Command("start"))
 async def start_handler(message: types.Message):
-    await message.answer("Привіт! Я бот, який відстежує ціну ETHUSDT і повідомляє про зміни.")
+    await message.answer("Привет! Я бот, который отслеживает цену ETHUSDT и сообщает об изменениях.")
 
 @dp.message()
 async def get_chat_id(message: types.Message):
